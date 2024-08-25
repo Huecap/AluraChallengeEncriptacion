@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+:root {
+    --background: #003347;
+    --main_color: #03bac7;
+    --second_color: #ffffff;
+    --third_color: #495057;
+}
+
+body {
+    background-color: var(--background);
+    color: black;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    min-width: 300px;
+}
+
+button {
+    width: 21rem;
+    height: 4rem;
+    border-radius: 1.5rem;
+    background-color: var(--background);
+    border-color: var(--main_color);
+    color:  var(--main_color);
+}
+
+
+.header{
+
+    padding: 1rem;
+    border-bottom: 1px solid var(--second_color);
+}
+.title{
+    color:  var(--second_color);
+    text-align: center;
+}
+
+.maincontent{
+    display: flex;
+    margin: 5%;
+    justify-content: space-around;
+}
+
+.maincontent_input{
+    display: flex;
+    flex-direction: column;
+    width: 50rem;
+}
+
+.maincontent_input_text{
+    font-size: 2rem;
+    background-color: var(--background);
+}
+
+.maincontent_input_caption{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--second_color);
+}
+.icon {
+    width: 1rem;
+    height: 1rem;
+}
+
+.maincontent_input_button_encriptar{
+    background-color: var(--main_color);
+    color: var(--background);
+}
+
+.maincontent_input_button_encriptar:hover {
+    background-color: var(--main-color);
+    color: var(--main_color);
+}
+
+.maincontent_input_button_desencriptar:hover{
+    background-color: var(--main_color);
+    color: var(--background);
+}
+.maincontent_output{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 25rem;
+    height: 30rem;
+    background-color: var(--second_color);
+    border-radius: 2rem;
+    box-shadow: 0px 0px 6.5rem var(--main_color);
+}
+
+.maincontent_output_div{
+    height: 10rem;
+    padding: 0rem 2rem 0rem 2rem;
+}
+
+.maincontent_output_div_image {
+    height: 12rem;
+    margin-top: 2rem;
+    width: 10rem;
+}
+.maincontent_output_copy_button {
+    width: 21rem;
+    height: 4rem;
+    margin: 0rem 2rem 2rem 2rem; 
+    background-color: var(--second_color);
+    color: var(--third_color);
+}
+
+
+.maincontent_output_copy_button:hover {
+    background-color: var(--background);
+    color: var(--second_color);
+}
+
+.footer{
+    background-color: #03bac7;
+    padding: 1rem;
+    box-shadow: 0rem 0.2rem 2px var(--second_color);
+}
+.footer_paragraph{
+    color:  #000000;
+    text-align: center;
+}
+
+#maintext {
+    color: var(--second_color);
+    border: none;
+    width: 80%;
+    height: 20rem;
+    overflow: auto;
+    resize: none;
+    outline: none;
+}    
+
+#maincontent_output_div_text{
+    font-size: 1.5rem;
+    font-weight:400;
+    color: var(--third_color);
+    border: none;
+    height: 8rem;
+    overflow: auto;
+    resize: none;
+    outline: none;
+}    
+
+@media (max-width: 1200px) {
+    
+    .header{
+        padding: 1.5rem;
+    }
+
+    
+    .maincontent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: auto;
+    }
+
+    .maincontent_input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .maincontent_input_buttons{
+        text-align: center;
+    }
+
+    .maincontent_output{
+        height: 20rem;
+        width: 80%;
+    }
+    .maincontent_output_div_image {
+        display: none;
+    }
+    #maincontent_output_div_text{
+        padding-top: 2rem;
+        height: 10rem;
+    }
+
+}
+
+@media (max-width: 500px) {
+    
+    .html{
+        font-size:10px;
+    }
+    .header{
+        padding: 1.5rem;
+    }
+
+    
+    .maincontent {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        width: auto;
+    }
+
+    .maincontent_input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+    }
+    .maincontent_input_buttons{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+
+    .maincontent_output{
+        width: 22rem;
+        height: 20rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    .maincontent_output_div_image {
+        display: none;
+    }
+    #maincontent_output_div_text{
+        padding-top: 2rem;
+    }
+
+}

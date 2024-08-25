@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Encriptacion</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+</head>
+<body>
+   <header class="header">
+       <h1 class="title">Encriptador de Textos</h1>
+   </header>
+   <main class="maincontent">
+    <div class="maincontent_input">
+        <textarea  class="maincontent_input_text" type="text" id="maintext" name="texto" required placeholder="Ingrese el texto aqui" oninput="validarMinusculas(this)"></textarea>
+        <p class="maincontent_input_caption"> <img  class="icon" src="assets/exclamacion.png"> solamente minusculas (No mayusculas ni caracteres especiales)</p>
+        <div class="maincontent_input_buttons">
+            <button class="maincontent_input_button_encriptar" onclick="encriptarTextoIngresado()">Encriptar</button>
+            <button class="maincontent_input_button_desencriptar" onclick="desencriptarTextoIgresado()">DesEncriptar</button>
+        </div>
+    </div>
+    <div class="maincontent_output">
+        <img class="maincontent_output_div_image" src="assets/f85e13fa04f2099c30e7691d8324efb0.png">
+        <div class="maincontent_output_div">
+            <textarea id="maincontent_output_div_text" readonly> no se ingreso ningun mensaje</textarea>
+        </div>
+        <button class="maincontent_output_copy_button" onclick="copiarTexto()">Copiar</button>
+    </div>
+   </main>
+
+   <footer class="footer">
+        <p class="footer_paragraph">Desarrollado Por Huenu Capdevila</p>
+   </footer>
+    <script src="app.js"></script>
+</body>
+</html>
